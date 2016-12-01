@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/djelas/androids/issues"
   },
-  "homepage": "https://github.com/djelas/androids#readme"
+  "homepage": "https://github.com/djelas/androids#readme",
+  "dependencies": {
+    "three": "^0.82.1"
+  }
 }
