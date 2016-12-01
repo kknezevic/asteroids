@@ -74,7 +74,6 @@ var ASTEROIDS = (function(module){
         input.changeKey(e.key, 0)
     });
 
-    var buffer = [];
     input.getBuffer = function() {
         return buffer.slice();
     };
