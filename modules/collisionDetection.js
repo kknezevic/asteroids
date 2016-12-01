@@ -1,7 +1,16 @@
+/**
+ *
+ * sphere = {
+ *      x:
+ *      y:
+ *      z:
+ *      radius:
+ * }
+ */
 var ASTEROIDS = (function (module) {
     module.CollisionDetection = {
         // check if spheres collide
-        // check if the sphere's centers is less than or equal to the sum of their radii
+        // check if the sphere's centers are less than or equal to the sum of their radii
         intersect: function (sphere, other) {
 
             var distance = Math.sqrt((sphere.x - other.x) * (sphere.x - other.x) +
@@ -9,6 +18,10 @@ var ASTEROIDS = (function (module) {
                 (sphere.z - other.z) * (sphere.z - other.z));
 
             return distance < (sphere.radius + other.radius);
+        },
+
+        collisionResponse: function () {
+            // if there will be time
         },
 
         // check if sphere collides with any sphere in spheres
