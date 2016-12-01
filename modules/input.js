@@ -18,7 +18,6 @@ var ASTEROIDS = (function(module){
 
     var buffer = [0,0,0,0,0,0];
 
-    // wasd, arrows, space
     input.changeKey = function(which, to) {
         switch (which) {
             // left
@@ -30,13 +29,13 @@ var ASTEROIDS = (function(module){
             // up
             case 'ArrowUp':
             case 'w':
-              buffer[2] = to;
+              buffer[1] = to;
               break;
 
             // right
             case 'ArrowRight':
             case 'd':
-              buffer[1] = to;
+              buffer[2] = to;
               break;
 
             // down
@@ -75,7 +74,8 @@ var ASTEROIDS = (function(module){
     });
 
     input.getBuffer = function() {
-        return buffer.slice();
+        console.log('getBuffer: ', buffer)
+        return buffer;
     };
 
     return module;
