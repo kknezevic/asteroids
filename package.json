@@ -1,5 +1,5 @@
 {
-  "name": "androids",
+  "name": "asteroids",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/djelas/androids.git"
+    "url": "git+https://github.com/djelas/asteroids.git"
   },
   "author": "",
   "license": "ISC",
